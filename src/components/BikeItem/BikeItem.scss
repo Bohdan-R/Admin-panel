@@ -1,0 +1,85 @@
+@import '../../styles/base.scss';
+
+.bike__list {
+  @extend %list;
+}
+
+.bike__card {
+  position: relative;
+  margin-bottom: 12px;
+  padding: 12px 12px 12px 18px;
+
+  background-color: $background-components-color;
+  border: 2px solid #6fcf97;
+  border-radius: 10px;
+
+  color: $main-text-color;
+
+  &--busy {
+    border: 2px solid #f2994a;
+  }
+
+  &--unavailable {
+    border: 2px solid #eb5757;
+    color: $unavailable-text-color;
+  }
+}
+
+.bike__info {
+  width: 280px;
+}
+
+.bike__name {
+  margin-bottom: 1px;
+  text-transform: uppercase;
+  & > span {
+    font-weight: 700;
+  }
+}
+
+.bike__id {
+  font-size: 8px;
+  line-height: 1.63;
+}
+
+.bike__status {
+  display: flex;
+  align-items: baseline;
+
+  color: $main-text-color;
+}
+
+.bike__status__title {
+  margin-right: 18px;
+}
+
+.bike__status__select {
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.bike__price {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+
+  font-size: 24px;
+  line-height: 1.58;
+}
+
+.bike__btn-close {
+  @extend %button;
+  position: absolute;
+  top: 12px;
+  right: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bike__icon--unavailable {
+  color: $unavailable-text-color;
+}

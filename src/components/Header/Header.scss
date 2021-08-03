@@ -1,0 +1,18 @@
+@import '../../styles/base.scss';
+
+header {
+  background-color: $background-color;
+}
+
+.container-header {
+  width: 1152px;
+  margin: 0 auto;
+  padding: 4px 16px 0px 16px;
+}
+
+.website-title {
+  font-family: 'Saira Stencil One', cursive;
+  font-size: 24px;
+  line-height: 1.58;
+  color: #e8e8e8;
+}
