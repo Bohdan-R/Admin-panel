@@ -17,7 +17,7 @@ export default function ContactForm() {
   } = useForm({ mode: 'onBlur' });
 
   const onSubmit = data => {
-    dispatch(bikeActions.addBikeList(data));
+    dispatch(bikeActions.addBike(data));
 
     resetInput();
   };
